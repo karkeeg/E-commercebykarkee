@@ -1,0 +1,15 @@
+
+
+.product-container{
+  display: flex;
+
+  .sidebar{
+    flex: 20%;
+    background: white;
+  }
+  .mainbar{
+    flex:80%;
+    background: rgb(243, 241, 241);
+
+  }
+}
