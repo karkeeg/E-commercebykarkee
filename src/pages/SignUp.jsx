@@ -9,6 +9,7 @@ const SignUp = () => {
           email:"",
           password:""
         }}
+        
         <div className="container d-flex justify-content-center align-items-center vh-100">
           <div className="p-4 border rounded" style={{ width: '100%', maxWidth: '400px' }}>
             <Form>
