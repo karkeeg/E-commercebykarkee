@@ -7,6 +7,7 @@ import MyPics from '../pages/MyPics'
 import LoginPage from '../pages/LoginPage'
 import ProductDetails from '../pages/ProductDetails'
 import CartPage from '../pages/CartPage'
+import SignUp from '../pages/SignUp'
 
 const MyRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const MyRoutes = () => {
 
     </Route>
     <Route path='/login' element={<LoginPage/>} />
+    <Route path='/signup' element={<SignUp/>} />
     </Routes>
    
     </BrowserRouter>
