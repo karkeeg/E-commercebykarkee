@@ -10,19 +10,19 @@ const Header = () => {
       <div className="d-flex align-items-center justify-content-end ">
  
   <div className="d-flex align-items-center me-auto">
-    <a href="#" className="d-flex align-items-center text-white text-decoration-none">
+    <Link to={'/'} className="d-flex align-items-center text-white text-decoration-none">
       <img className="img-responsive2 me-2" 
            src="https://w7.pngwing.com/pngs/175/316/png-transparent-alva-logo-los-k-morales-k-miscellaneous-angle-logo-thumbnail.png" 
            alt="Logo" width="40"/>
-    </a>
     <h2 className="mb-0">Karkee</h2>
+    </Link>
   </div>
 
   <ul className="nav mx-auto">
     <li><Link to={'/'} className="nav-link px-2 text-secondary">Home</Link></li>
     <li><Link to={'/mypics'} className="nav-link px-2 text-white">My Products</Link></li>
     <li><Link to={'/cart'} className="nav-link px-2 text-white">My Cart</Link></li>
-    <li><a href="#" className="nav-link px-2 text-white">FAQs</a></li>
+    <li><Link to={'/'} className="nav-link px-2 text-white">FAQs</Link></li>
     <li><Link to={'/about'} className="nav-link px-2 text-white">About</Link></li>
   </ul>
 

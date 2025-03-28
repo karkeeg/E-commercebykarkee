@@ -20,6 +20,10 @@ export const counterSlice = createSlice({
             state.value = state.value +action.payload;
 
         },
+        decreamentByAmmount:(state,action)=>{
+            state.value = state.value - action.payload;
+
+        },
     }
 })
 
