@@ -1,13 +1,12 @@
-
 .custom-img {
-    height: 100vh; 
-    object-fit: cover;
-  }
-  .carousel-inner, .carousel-item {
-    height: 100vh; 
-  }
-  .fixed-img {
-    height: 200px;
-    object-fit: cover;  /* Ensures images maintain aspect ratio */
-  }
-  
+  height: 100vh;
+  object-fit: cover;
+}
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+.fixed-img {
+  height: 200px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+}

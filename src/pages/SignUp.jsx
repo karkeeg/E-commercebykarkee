@@ -1,14 +1,32 @@
 import React from 'react';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
+import * as Yup from 'yup'
 
 const SignUp = () => {
   return (
     <>
-      <Formik>
-        initialvalues={{
+      <Formik
+        initialValues={{
           email:"",
           password:""
         }}
+
+        validationSchema={Yup.object({
+          email: Yup.string()
+          .required()
+          .max(20,)
+          .email(),
+
+
+          password :Yup.string()
+          .required()
+          .min(4)
+          .matches(/(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$&*_-])(?=.*[a-zA-Z0-9!@#$&*_-])/,"Password is weak!")
+          .min(8)
+         })}
+      >
+
+
         
         <div className="container d-flex justify-content-center align-items-center vh-100">
           <div className="p-4 border rounded" style={{ width: '100%', maxWidth: '400px' }}>
